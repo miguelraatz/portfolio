@@ -3,20 +3,66 @@
     <head>
         <meta charset="UTF-8">
         <title>Portfólio</title>
+        <style>
+            body {
+                background-color: #9191E9;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+            
+            }
+            h1 {
+                text-align: center;
+        
+            }
+            h2 {
+                text-align: left;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            p {
+                font-size: 14px;
+                text-align: left;
+            }
+            #minhafoto {
+                text-align: center;
+            }
+            #habilidades {
+                text-align: center;
+            }
+            ul {
+                text-align: center;
+                font-size: 18px;
+                font-style: oblique;
+            }
+            .blog {
+                text-align: right;
+            }
+            .destaque {
+                color: blue;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 14px;
+            }
+            
+        </style>
     </head>
     
     <body>
         
         <!--Seção 1 nome-->
 
-        <h1><strong>Portfólio<br><hr>
-            Miguel Oscar Raatz Junior</strong></h1>
+            <hr>
+        
+        <h1><strong>Portfólio
+        <br>
+            Miguel Oscar Raatz Junior
+        </strong></h1>
 
             <hr>
         
         <!--Seção 2 índice-->
         
-        <h2><i>Índice</i></h2>
+        <h2>Índice</h2>
         
         <ol>
             <li><a href="#minhafoto">Minha foto</a></li>
@@ -27,27 +73,35 @@
         
         <!--Seção 3 foto-->
         
-        <p id="minhafoto"><img src="./images/minha.jpeg"width=300><br><br><br></p>
+        <p id="minhafoto"><img src="./images/minha.jpeg"width=250px></p>
         
         <!--Seção 4 sobre mim-->
         
-        <p id="sobremim"><h2><i>Sobre mim:</i></h2></p>
-        <p><h4>Me chamo Miguel tenho 30 anos, sou <b><u><i>Brasileiro</i></u></b><br>
-        e atualmente moro em <u><i>Terra Roxa - Paraná</i></u>.</h4></body></html></p>
+        <h2 id="sobremim">Sobre mim:</h2>
+        <p>Me chamo Miguel tenho 30 anos, sou <a class="destaque">Brasileiro</a>
+        <br>e atualmente moro em <a class="destaque">Terra Roxa - Paraná.</a><br> Sou cristão
+            pertencente a Igreja Adventista do <br> Sétimo Dia e sempre gostei muito de computador,
+            <br>video-games no geral, estar estudando programação <br> hoje na Trybe é a realização de um sonho
+            para mim, <br> sempre almejei ser um profissional nessa área.
+        </p>
         
         <!--Seção 5 habilidades-->
         
-        <p id="habilidades"><h2><i>Habilidades que possuo:</i></p></h2>
+        <h2 id="habilidades">Habilidades que possuo:</h2>
         
+       
         <ul>
             <li><b>Unix e Bash</b></li>
             <li><b>Git e GitHub</b></li>
             <li><b>Básico HTML</b></li>
         </ul>
+        
 
         <!--Seção 6 link blog-->
         
-        <p id="blog"><b><h2><i>Blog favorito:</i></b></h2></p>
+        <div class="blog">
+        <h2 class="blog">Blog favorito:</h2>
         <a href="https://geekblog.com.br/" target="_blank">Geek Blok</a>
+        </div>
     </body>
 </html>
