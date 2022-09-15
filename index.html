@@ -3,47 +3,81 @@
     <head>
         <meta charset="UTF-8">
         <title>Portfólio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
         <style>
             body {
                 background-color: #9191E9;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        
+                font-family: montserrat;
+                }
             
-            }
             h1 {
                 text-align: center;
-        
+                font-weight: bold;
             }
+            
             h2 {
                 text-align: left;
                 font-size: 25px;
                 font-weight: bold;
             }
+            
             p {
                 font-size: 14px;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            ul {
                 text-align: left;
-            }
-            #minhafoto {
-                text-align: center;
-            }
-            #habilidades {
-                text-align: center;
-            }
-            ul, li {
-                text-align: center;
                 font-size: 18px;
                 font-style: oblique;
             }
-            .blog {
-                text-align: right;
+
+            ol {
+                font-weight: bold;
+                font-size: 15px;
+                color: black;
+                text-decoration: none;
             }
+
+            .blog {
+                text-align: center;
+            }
+            
             .destaque { 
                 color: blue;
                 font-weight: bold;
                 font-style: italic;
                 font-size: 14px;
             }
+
+            .foto {
+                border-radius: 100px;
+            }
             
+            .botao {
+                background-color: darkblue;
+                color: black;
+                padding: 9px 80px;
+                border-radius: 30px;
+                text-decoration: none;
+                font-weight: bolder;
+                font-size: 20px;
+                text-align: center;
+            }
+            
+            #minhafoto {
+                text-align: center;
+            }
+            
+            #habilidades {
+                text-align: left;
+            }
+            
+            #sobremim {
+                text-align: center;
+            }
+
         </style>
     </head>
     
@@ -65,7 +99,7 @@
         <h2>Índice</h2>
         
         <ol>
-            <li><a href="#minhafoto">Minha foto</a></li>
+            <li><a href="#minhafoto">Minha foto</li></a>
             <li><a href="#sobremim">Sobre mim</a></li>
             <li><a href="#habilidades">Habilidades que possuo</a></li>
             <li><a href="#blog">Blog favorito</a></li>
@@ -73,7 +107,7 @@
         
         <!--Seção 3 foto-->
         
-        <p id="minhafoto"><img src="./images/minha.jpeg"width=250px></p>
+        <p id="minhafoto"><img class="foto" src="./images/minha.jpeg" width=250px></p>
         
         <!--Seção 4 sobre mim-->
         
@@ -101,7 +135,7 @@
         
         
         <h2 class="blog">Blog favorito:</h2>
-        <a href="https://geekblog.com.br/" target="_blank"><div class=blog>Geek Blok</a></div>
+        <p><a class="botao" href="https://geekblog.com.br/" target="_blank"> Geek Blok</p></a>
         
     </body>
 </html>
