@@ -4,123 +4,43 @@
         <meta charset="UTF-8">
         <title>Portfólio</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-        <style>
-            body {
-                background-color: #9191E9;
-                font-family: montserrat;
-                }
-            
-            h1 {
-                text-align: center;
-                font-weight: bold;
-            }
-            
-            h2 {
-                text-align: left;
-                font-size: 25px;
-                font-weight: bold;
-            }
-            
-            p {
-                font-size: 14px;
-                text-align: center;
-                font-weight: bold;
-            }
-
-            ul {
-                text-align: left;
-                font-size: 18px;
-                font-style: oblique;
-            }
-
-            ol {
-                font-weight: bold;
-                font-size: 15px;
-                color: black;
-                text-decoration: none;
-            }
-
-            .blog {
-                text-align: center;
-            }
-            
-            .destaque { 
-                color: blue;
-                font-weight: bold;
-                font-style: italic;
-                font-size: 14px;
-            }
-
-            .foto {
-                border-radius: 100px;
-            }
-            
-            .botao {
-                background-color: darkblue;
-                color: black;
-                padding: 9px 80px;
-                border-radius: 30px;
-                text-decoration: none;
-                font-weight: bolder;
-                font-size: 20px;
-                text-align: center;
-            }
-            
-            #minhafoto {
-                text-align: center;
-            }
-            
-            #habilidades {
-                text-align: left;
-            }
-            
-            #sobremim {
-                text-align: center;
-            }
-
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     
     <body>
-        
-        <!--Seção 1 nome-->
-
-            <hr>
-        
-        <h1><strong>Portfólio
-        <br>
-            Miguel Oscar Raatz Junior
-        </strong></h1>
-
-            <hr>
-        
         <!--Seção 2 índice-->
+        <div class="indice">
+            <h2>Índice</h2>
         
-        <h2>Índice</h2>
-        
-        <ol>
-            <li><a href="#minhafoto">Minha foto</li></a>
-            <li><a href="#sobremim">Sobre mim</a></li>
-            <li><a href="#habilidades">Habilidades que possuo</a></li>
-            <li><a href="#blog">Blog favorito</a></li>
-        </ol>
+                <ol>
+                    <li><a href="#foto">Minha foto</li></a>
+                    <li><a href="#sobremim">Sobre mim</a></li>
+                    <li><a href="#habilidades">Habilidades que possuo</a></li>
+                    <li><a href="#blog">Blog favorito</a></li>
+                </ol>
+        </div>
         
         <!--Seção 3 foto-->
         
-        <p id="minhafoto"><img class="foto" src="./images/minha.jpeg" width=250px></p>
+        
         
         <!--Seção 4 sobre mim-->
         
-        <h2 id="sobremim">Sobre mim:</h2>
-        <p>Me chamo Miguel tenho 30 anos, sou <a class="destaque">Brasileiro</a>
-        <br>e atualmente moro em <a class="destaque">Terra Roxa - Paraná.</a><br> Sou cristão
-            pertencente a Igreja Adventista do <br> Sétimo Dia e sempre gostei muito de computador,
-            <br>video-games no geral, estar estudando programação <br> hoje na Trybe é a realização de um sonho
-            para mim, <br> sempre almejei ser um profissional nessa área.
-        </p>
-        
+        <div>
+            <h1>Portfólio <br>
+                Miguel Oscar Raatz Junior</h1>
+                <div class="descricao">
+                    <img id="foto" src="./images/minha.jpeg" alt="minha foto">
+                        <h2>Sobre mim:</h2>
+                        <p>Me chamo Miguel tenho 30 anos, sou <span class="destaque">Brasileiro</span>
+                        <br>e atualmente moro em <span class="destaque">Terra Roxa - Paraná.</span><br> Sou cristão
+                        pertencente a Igreja Adventista do <br> Sétimo Dia e sempre gostei muito de computador,
+                        <br>video-games no geral, estar estudando programação <br> hoje na Trybe é a realização de um sonho
+                        para mim, <br> sempre almejei ser um profissional nessa área. </p>
+            </div>  
+        </div>
         <!--Seção 5 habilidades-->
-        
+        <div classe="dez">
         <h2 id="habilidades">Habilidades que possuo:</h2>
         
        
@@ -136,6 +56,6 @@
         
         <h2 class="blog">Blog favorito:</h2>
         <p><a class="botao" href="https://geekblog.com.br/" target="_blank"> Geek Blok</p></a>
-        
+        </div>
     </body>
 </html>
